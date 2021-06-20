@@ -1,0 +1,12 @@
+/* @media(min-width: 768px) {
+    .card-list {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+} */
+
+.card-list {
+    margin: 0 auto;
+    width: 100%;
+}

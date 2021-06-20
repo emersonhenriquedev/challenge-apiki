@@ -41,15 +41,13 @@ export default function Home() {
 
   function showLoadMoreButton() {
     if (currentPage < totalPage) {
-      return <button onClick={handleLoadMoreButton}>Carregar mais</button>
+      return <button className="posts__btn" onClick={handleLoadMoreButton}>Carregar mais</button>
     }
     return <p>Não há mais posts para exibir</p>
   }
 
   return (
     <div className="posts ">
-
-      <h4>{currentPage}</h4>
       <CardList posts={posts} />
       <div style={{ textAlign: 'center' }}>
         {!loading ? showLoadMoreButton() : <Loader type='Bars' color="#000" />}

@@ -2,7 +2,7 @@
     margin: 1rem;
 }
 
-.post img {
+.post img, .post pre {
     width: 100%;
     object-fit: contain;
 }
@@ -16,6 +16,12 @@
 .post h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
+    margin: 1rem 0;
+}
+
+.post h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     margin: 1rem 0;
 }
 
@@ -37,3 +43,16 @@
     font-weight: 100;
 }
 
+@media(min-width: 500px) {
+    .post {
+        margin: 1rem 5rem;
+    }
+}
+
+
+@media(min-width: 1000px) {
+    .post {
+        margin: 1rem 15rem;
+        padding: 1rem 5rem;
+    }
+}
