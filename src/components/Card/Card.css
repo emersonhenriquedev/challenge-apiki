@@ -1,8 +1,9 @@
-/* 768px a  */
 .card {
     margin:  2rem 0;
     box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
     width: 100%;
+
+    animation:  .8s slideIn;
 }
 
 .link__featured {
@@ -11,6 +12,7 @@
 
 .card__featured {
     width: 100%;
+    border-radius: 4px;
 }
 
 .card__title {
@@ -36,12 +38,16 @@
 
 .card__btn {
     text-decoration: none;
-    background-color: #61dafb;
     background-color: #e7e7e7;
     padding: .5rem;
     color: #000;
     font-family: 'Roboto';
     font-weight: 300;
+    border-radius: 4px;
+}
+
+.card__btn:hover {
+    background-color: #cacbcd;
 }
 
 @media(min-width: 500px) {
@@ -56,5 +62,15 @@
         height: 100%;
         width: 15rem;
         object-fit: contain;
+    }
+}
+
+@keyframes slideIn {
+    from {
+      margin-top: 3rem;
+    }
+  
+    to {
+      margin-top: 2rem;
     }
 }

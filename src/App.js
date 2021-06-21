@@ -1,33 +1,31 @@
 import './App.css';
 
-import { BlogProvider } from './context/BlogContext';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
-} from 'react-router-dom'
+} from 'react-router-dom';
 
 import Home from './pages/Home';
 import Post from './pages/Post';
+import About from './pages/About';
 import Header from './components/Header';
 
 function App() {
   return (
-    <BlogProvider>
-      <div className="App">
-        <Router>
-          <Header />
-          <Switch>
-            <div className="content">
-              <Route path="/" exact component={Home} />
-              <Route path="/blog/:slug" component={Post} />
-            </div>
-          </Switch>
+    <div className="App">
+      <Router>
+        <Header />
+        <Switch>
+          <div className="content">
+            <Route path="/" exact component={Home} />
+            <Route path="/blog/:slug" component={Post} />
+            <Route path="/about" component={About} />
+          </div>
+        </Switch>
 
-        </Router>
-      </div>
-    </BlogProvider>
+      </Router>
+    </div>
 
   );
 }

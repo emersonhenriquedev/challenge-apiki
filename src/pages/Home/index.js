@@ -1,15 +1,12 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import Loader from 'react-loader-spinner'
-// import { BlogContext } from "../../context/BlogContext"
 
 import CardList from "../../components/CardList"
 
 import './Home.css'
 
 export default function Home() {
-
-  // const { state, dispatch, loadMore, loading } = useContext(BlogContext)
 
   const [posts, setPosts] = useState([])
   const [loading, setLoading] = useState(true)

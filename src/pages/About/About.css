@@ -1,0 +1,30 @@
+.about {
+    margin: 5rem 0;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    animation: .8s slideIn;
+}
+
+.about__title {
+    font-family: 'Montserrat', sans-serif;
+    margin:  1rem 0;
+}
+
+.about__content {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 1.5rem
+}
+
+.about__content ul li {
+    margin: 1rem 0;
+}
+
+@keyframes slideIn {
+    from {
+      margin-top: 8rem;
+    }
+  
+    to {
+      margin-top: 5rem;
+    }
+}

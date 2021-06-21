@@ -14,16 +14,22 @@
     }
 }
 
-
 .posts__btn {
     border: none;
     text-decoration: none;
-    background-color: #61dafb;
     background-color: #e7e7e7;
+    background-color: #1b1c1d;
     padding: .5rem;
     color: #000;
+    color: #fff;
+    border-radius: 3px;
     font-family: 'Roboto';
     font-weight: 300;
     font-size: 1.1rem;
     cursor: pointer;
+}
+
+.posts__btn:hover {
+    background-color: #cacbcd;
+    background-color: #27292a;
 }
